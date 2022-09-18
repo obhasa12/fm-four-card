@@ -1,0 +1,39 @@
+@use 'variables' as v;
+
+html{
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+html,body,h1,h2,h3,p{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: v.$cl-neutral-lightblue;
+}
+
+.section-format{
+    padding: 25px;
+    width: 311px;
+    height: 222px;
+    font-size: 15px;
+    border: 2px green solid;
+
+    & h2{
+
+    }
+
+    & p{
+        color: v.$cl-neutral-grayishblue;
+    }
+
+    & img{
+        float: right;
+    }
+}

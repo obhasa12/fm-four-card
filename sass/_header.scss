@@ -1,0 +1,27 @@
+@use 'variables' as v;
+
+header{
+    margin: 0 41px;
+    margin-top: 92px;
+    text-align: center;
+   
+
+    & h1{
+        font-size: 24px;
+        margin-bottom: 19px;
+    }
+    
+}
+
+.header{
+    &__title{
+        font-size: 23px;
+        font-weight: 100;
+    }
+
+    &__description{
+        margin-bottom: 70px;
+        font-size: 15px;
+        color: v.$cl-neutral-grayishblue;
+    }
+}

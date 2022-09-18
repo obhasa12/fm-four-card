@@ -1,0 +1,56 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html, body, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: hsl(0deg, 0%, 98%);
+}
+
+.section-format {
+  padding: 25px;
+  width: 311px;
+  height: 222px;
+  font-size: 15px;
+  border: 2px green solid;
+}
+.section-format p {
+  color: hsl(229deg, 6%, 66%);
+}
+.section-format img {
+  float: right;
+}
+
+header {
+  margin: 0 41px;
+  margin-top: 92px;
+  text-align: center;
+}
+header h1 {
+  font-size: 24px;
+  margin-bottom: 19px;
+}
+
+.header__title {
+  font-size: 23px;
+  font-weight: 100;
+}
+.header__description {
+  margin-bottom: 70px;
+  font-size: 15px;
+  color: hsl(229deg, 6%, 66%);
+}
+
+section {
+  margin: 0 31px;
+}/*# sourceMappingURL=style.css.map */
