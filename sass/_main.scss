@@ -1,9 +1,18 @@
+@use 'mixins' as m;
 main{
 
 }
 
 .main{
-
+    &__section{
+        @include m.breakpoints-up(large){
+        position: relative;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+    }
 }
 
 section{
@@ -11,5 +20,24 @@ section{
 }
 
 .section{
+    @include m.breakpoints-up(large){
+        &__container1{
+            position: absolute;
+            order: 1;
+            left: 8%;
 
+
+        }
+        &__container2{
+            order: 2;
+        }
+        &__container3{
+            order: 4;
+        }
+        &__container4{
+            position: absolute;
+            order: 3;
+            right: 8%;
+    }
+    }
 }

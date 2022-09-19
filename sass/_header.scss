@@ -1,27 +1,46 @@
 @use 'variables' as v;
+@use 'mixins' as m;
 
 header{
     margin: 0 41px;
     margin-top: 92px;
     text-align: center;
+
+    @include m.breakpoints-up(large){
+        margin: 0 34%;
+        margin-top: 54px;
+    }
+
    
 
     & h1{
-        font-size: 24px;
         margin-bottom: 19px;
+        font-size: 24px;
+        color: v.$cl-neutral-darkblue;
+        @include m.breakpoints-up(large){
+            font-size: 27px;
+        }
     }
     
 }
 
 .header{
     &__title{
-        font-size: 23px;
+        font-size: 24px;
         font-weight: 100;
+        color: v.$cl-neutral-grayishblue;
+        @include m.breakpoints-up(large){
+            font-size: 27px;
+    }
     }
 
     &__description{
         margin-bottom: 70px;
         font-size: 15px;
         color: v.$cl-neutral-grayishblue;
+        @include m.breakpoints-up(large){
+            margin-bottom: 38px;
+        }
+        
     }
 }

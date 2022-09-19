@@ -18,13 +18,36 @@ body {
 }
 
 .section-format {
+  margin-bottom: 20px;
   padding: 25px;
   width: 311px;
-  height: 222px;
+  height: 248px;
   font-size: 15px;
-  border: 2px green solid;
+  box-shadow: 0px 1px 9px hsl(234deg, 12%, 34%);
+}
+@media (min-width: 64em) {
+  .section-format {
+    width: 400px;
+    height: 220px;
+  }
+}
+.section-format:first-child {
+  border-top: 3px solid hsl(180deg, 62%, 55%);
+}
+.section-format:nth-child(2) {
+  border-top: 3px solid hsl(0deg, 78%, 62%);
+}
+.section-format:nth-child(3) {
+  border-top: 3px solid hsl(34deg, 97%, 64%);
+}
+.section-format:last-child {
+  border-top: 3px solid hsl(212deg, 86%, 64%);
+}
+.section-format h2 {
+  color: hsl(234deg, 12%, 34%);
 }
 .section-format p {
+  margin-bottom: 45px;
   color: hsl(229deg, 6%, 66%);
 }
 .section-format img {
@@ -36,21 +59,73 @@ header {
   margin-top: 92px;
   text-align: center;
 }
+@media (min-width: 64em) {
+  header {
+    margin: 0 34%;
+    margin-top: 54px;
+  }
+}
 header h1 {
-  font-size: 24px;
   margin-bottom: 19px;
+  font-size: 24px;
+  color: hsl(234deg, 12%, 34%);
+}
+@media (min-width: 64em) {
+  header h1 {
+    font-size: 27px;
+  }
 }
 
 .header__title {
-  font-size: 23px;
+  font-size: 24px;
   font-weight: 100;
+  color: hsl(229deg, 6%, 66%);
+}
+@media (min-width: 64em) {
+  .header__title {
+    font-size: 27px;
+  }
 }
 .header__description {
   margin-bottom: 70px;
   font-size: 15px;
   color: hsl(229deg, 6%, 66%);
 }
+@media (min-width: 64em) {
+  .header__description {
+    margin-bottom: 38px;
+  }
+}
+
+@media (min-width: 64em) {
+  .main__section {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 
 section {
   margin: 0 31px;
+}
+
+@media (min-width: 64em) {
+  .section__container1 {
+    position: absolute;
+    order: 1;
+    left: 8%;
+  }
+  .section__container2 {
+    order: 2;
+  }
+  .section__container3 {
+    order: 4;
+  }
+  .section__container4 {
+    position: absolute;
+    order: 3;
+    right: 8%;
+  }
 }/*# sourceMappingURL=style.css.map */
