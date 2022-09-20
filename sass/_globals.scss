@@ -22,7 +22,7 @@ body{
 .section-format{
     margin-bottom: 20px;
     padding: 25px;
-    width: 311px;
+    min-width: 311px;
     height: 248px;  
     font-size: 15px;
     // border: 2px green solid;
@@ -65,6 +65,10 @@ body{
     & p{
         margin-bottom: 45px;
         color: v.$cl-neutral-grayishblue;
+        @include m.breakpoints-up(large){
+            margin-bottom: 21px;
+        }
+
     }
 
     & img{

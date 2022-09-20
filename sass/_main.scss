@@ -11,6 +11,8 @@ main{
         flex-flow: column;
         justify-content: center;
         align-items: center;
+        // z-index: auto;
+        // background-color: #fff;
     }
     }
 }
@@ -25,8 +27,6 @@ section{
             position: absolute;
             order: 1;
             left: 8%;
-
-
         }
         &__container2{
             order: 2;

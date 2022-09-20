@@ -20,7 +20,7 @@ body {
 .section-format {
   margin-bottom: 20px;
   padding: 25px;
-  width: 311px;
+  min-width: 311px;
   height: 248px;
   font-size: 15px;
   box-shadow: 0px 1px 9px hsl(234deg, 12%, 34%);
@@ -49,6 +49,11 @@ body {
 .section-format p {
   margin-bottom: 45px;
   color: hsl(229deg, 6%, 66%);
+}
+@media (min-width: 64em) {
+  .section-format p {
+    margin-bottom: 21px;
+  }
 }
 .section-format img {
   float: right;
